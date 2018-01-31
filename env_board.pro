@@ -1,4 +1,4 @@
-update=07.11.2017 16:21:07
+update=Thu 28 Dec 2017 11:22:15 AM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../KiCAD/kicad-library/library
+LibDir=/home/chirsch/workspace/kicad/kicad-symbols
 [eeschema/libraries]
 LibName1=env_board-rescue
 LibName2=power
@@ -61,4 +61,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=rfcom
 LibName32=sensors
-LibName33=Battery_Management
+LibName33=RF_Bluetooth
