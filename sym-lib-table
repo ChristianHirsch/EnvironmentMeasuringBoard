@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name env_board-rescue)(type Legacy)(uri ${KIPRJMOD}/env_board-rescue.lib)(options "")(descr ""))
+  (lib (name power1)(type Legacy)(uri /usr/share/kicad/library/power.lib)(options "")(descr ""))
+  (lib (name Battery_Management1)(type Legacy)(uri /usr/share/kicad/library/Battery_Management.lib)(options "")(descr ""))
+)
