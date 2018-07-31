@@ -294,7 +294,7 @@ Text Label 2700 3250 0    60   ~ 0
 BATT_V_EN
 Text Label 5450 4150 0    60   ~ 0
 BATT_V_EN
-Text Label 4050 3850 2    60   ~ 0
+Text Label 4050 3750 2    60   ~ 0
 BATT_V
 Text Label 4050 3250 2    60   ~ 0
 SWDIO/RESET
@@ -309,7 +309,7 @@ F 3 "" H 3100 1900 50  0001 C CNN
 	1    3100 1900
 	1    0    0    -1  
 $EndComp
-Text Label 4050 4250 2    60   ~ 0
+Text Label 4050 4550 2    60   ~ 0
 CCS_WAKE
 Wire Wire Line
 	9300 3050 9100 3050
@@ -495,6 +495,177 @@ Wire Wire Line
 Connection ~ 6800 3550
 Wire Wire Line
 	6800 3550 6800 3000
-Text Label 4050 3750 2    60   ~ 0
+Text Label 4050 4250 2    60   ~ 0
 SDA
+$Comp
+L Memory_Flash:SST26VF016B U7
+U 1 1 5B5F4E04
+P 8550 5350
+F 0 "U7" H 8878 5446 50  0000 L CNN
+F 1 "SST26VF016B" H 8878 5355 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8650 5450 50  0001 C CNN
+F 3 "https://www.microchip.com/wwwproducts/en/SST26VF016B" H 8650 5450 50  0001 C CNN
+	1    8550 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power1:VDD #PWR0101
+U 1 1 5B5F4ECA
+P 8750 4750
+F 0 "#PWR0101" H 8750 4600 50  0001 C CNN
+F 1 "VDD" H 8750 4900 50  0000 C CNN
+F 2 "" H 8750 4750 50  0001 C CNN
+F 3 "" H 8750 4750 50  0001 C CNN
+	1    8750 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power1:GND #PWR0102
+U 1 1 5B5F4EEF
+P 8750 5850
+F 0 "#PWR0102" H 8750 5600 50  0001 C CNN
+F 1 "GND" H 8750 5700 50  0000 C CNN
+F 2 "" H 8750 5850 50  0001 C CNN
+F 3 "" H 8750 5850 50  0001 C CNN
+	1    8750 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5850 8750 5800
+Wire Wire Line
+	8750 4850 8750 4800
+$Comp
+L Device:C C9
+U 1 1 5B5F7086
+P 9500 5300
+F 0 "C9" H 9525 5400 50  0000 L CNN
+F 1 "0.1u" H 9525 5200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9538 5150 50  0001 C CNN
+F 3 "" H 9500 5300 50  0001 C CNN
+	1    9500 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4800 9500 4800
+Wire Wire Line
+	9500 4800 9500 5150
+Connection ~ 8750 4800
+Wire Wire Line
+	8750 4800 8750 4750
+Wire Wire Line
+	9500 5450 9500 5800
+Wire Wire Line
+	9500 5800 8750 5800
+Connection ~ 8750 5800
+Wire Wire Line
+	8750 5800 8750 5750
+$Comp
+L Device:R R10
+U 1 1 5B5F9644
+P 7600 4800
+F 0 "R10" V 7680 4800 50  0000 C CNN
+F 1 "100k" V 7600 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7530 4800 50  0001 C CNN
+F 3 "" H 7600 4800 50  0000 C CNN
+	1    7600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5B5F96DE
+P 7400 4800
+F 0 "R9" V 7480 4800 50  0000 C CNN
+F 1 "100k" V 7400 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7330 4800 50  0001 C CNN
+F 3 "" H 7400 4800 50  0000 C CNN
+	1    7400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5B5F984C
+P 7200 4800
+F 0 "R6" V 7280 4800 50  0000 C CNN
+F 1 "100k" V 7200 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7130 4800 50  0001 C CNN
+F 3 "" H 7200 4800 50  0000 C CNN
+	1    7200 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5550 7200 5550
+Wire Wire Line
+	7200 5550 7200 4950
+Wire Wire Line
+	8150 5450 7400 5450
+Wire Wire Line
+	7400 5450 7400 4950
+Wire Wire Line
+	8150 5050 7600 5050
+Wire Wire Line
+	7600 5050 7600 4950
+$Comp
+L power1:VDD #PWR0103
+U 1 1 5B600786
+P 7400 4550
+F 0 "#PWR0103" H 7400 4400 50  0001 C CNN
+F 1 "VDD" H 7400 4700 50  0000 C CNN
+F 2 "" H 7400 4550 50  0001 C CNN
+F 3 "" H 7400 4550 50  0001 C CNN
+	1    7400 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4650 7200 4600
+Wire Wire Line
+	7200 4600 7400 4600
+Wire Wire Line
+	7400 4600 7400 4550
+Wire Wire Line
+	7400 4650 7400 4600
+Connection ~ 7400 4600
+Wire Wire Line
+	7600 4650 7600 4600
+Wire Wire Line
+	7600 4600 7400 4600
+Text Label 8150 5150 2    50   ~ 0
+FLASH_SCK
+Text Label 8150 5250 2    50   ~ 0
+FLASH_SI
+Text Label 8150 5350 2    50   ~ 0
+FLASH_SO
+Text Label 7950 5050 1    50   ~ 0
+FLASH_CS
+Text Label 4050 3950 2    50   ~ 0
+SPI_SCK
+Text Label 4050 4150 2    50   ~ 0
+SPI_SS
+Text Label 4050 4050 2    50   ~ 0
+SPI_MOSI
+Text Label 4050 3850 2    50   ~ 0
+SPI_MISO
+Text Label 6950 5950 0    50   ~ 0
+FLASH_SCK
+Text Label 6950 6050 0    50   ~ 0
+FLASH_SI
+Text Label 6950 6150 0    50   ~ 0
+FLASH_SO
+Text Label 6750 6150 2    50   ~ 0
+SPI_MISO
+Text Label 6750 6050 2    50   ~ 0
+SPI_MOSI
+Text Label 6750 5950 2    50   ~ 0
+SPI_SCK
+Text Label 6950 5850 0    50   ~ 0
+FLASH_CS
+Text Label 6750 5850 2    50   ~ 0
+SPI_SS
+Wire Wire Line
+	6750 5850 6950 5850
+Wire Wire Line
+	6750 5950 6950 5950
+Wire Wire Line
+	6750 6050 6950 6050
+Wire Wire Line
+	6750 6150 6950 6150
 $EndSCHEMATC
